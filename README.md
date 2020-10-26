@@ -6,9 +6,9 @@ The files in this repository were used to configure the network depicted below.
 
 https://github.com/jnewport9494/automatedELK-stack-deployment/blob/main/images/Network%20Diagram.png
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Ansible Playbook file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Install Elk file may be used to install only certain pieces of it, such as Filebeat.
 
-  - _TODO: Enter the playbook file._
+https://github.com/jnewport9494/automatedELK-stack-deployment/blob/main/Playbooks/install-elk.yml
 
 This document contains the following details:
 - Description of the Topologu
@@ -21,7 +21,7 @@ This document contains the following details:
 
 ### Description of the Topology
 
-The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
+The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the Damn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly _____, in addition to restricting _____ to the network.
 - _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
@@ -70,7 +70,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+https://github.com/jnewport9494/automatedELK-stack-deployment/blob/main/images/Docker%20Containers.png
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
