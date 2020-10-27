@@ -35,9 +35,9 @@ The configuration details of each machine may be found below.
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
 | Jump Box | Gateway  | 10.0.0.4   | Ubuntu 18.04 LTS |
-| Web1     |          |            | Ubuntu 18.04 LTS |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
+| Web1     |          | 10.0.0.6   | Ubuntu 18.04 LTS |
+| Web2     |          | 10.0.0.7   | Ubuntu 18.04 LTS |
+| Elk      |          | 10.1.0.4   | Ubuntu 18.04 LTS |
 
 ### Access Policies
 
