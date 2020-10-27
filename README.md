@@ -1,5 +1,5 @@
 # automatedELK-stack-deployment
-Here is the Automated ELK Stack Deployment with Metricbeat and Filebeat for Project 1. 
+Here is an Automated ELK Stack Deployment with Metricbeat and Filebeat.
 ## Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
