@@ -23,7 +23,7 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the Damn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly ___, in addition to restricting _____ to the network.
+Load balancing ensures that the application will be highly accesible, in addition to restricting Tim's porn collection to the network.
 - _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system services.
@@ -34,8 +34,8 @@ The configuration details of each machine may be found below.
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.4   | Ubuntu 18.04 LTS           |
-| TODO     |          |            |                  |
+| Jump Box | Gateway  | 10.0.0.4   | Ubuntu 18.04 LTS |
+| Web1     |          |            | Ubuntu 18.04 LTS |
 | TODO     |          |            |                  |
 | TODO     |          |            |                  |
 
