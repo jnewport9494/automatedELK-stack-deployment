@@ -35,27 +35,27 @@ The configuration details of each machine may be found below.
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
 | Jump Box | Gateway  | 10.0.0.4   | Ubuntu 18.04 LTS |
-| Web1     |          | 10.0.0.6   | Ubuntu 18.04 LTS |
-| Web2     |          | 10.0.0.7   | Ubuntu 18.04 LTS |
-| Elk      |          | 10.1.0.4   | Ubuntu 18.04 LTS |
+| Web1     | Container| 10.0.0.6   | Ubuntu 18.04 LTS |
+| Web2     | Container| 10.0.0.7   | Ubuntu 18.04 LTS |
+| Elk      |   VM     | 10.1.0.4   | Ubuntu 18.04 LTS |
 
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+Only the ELK machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 - _TODO: Add whitelisted IP addresses_
 
-Machines within the network can only be accessed by _____.
+Machines within the network can only be accessed by the client machine.
 - _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
 
 A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+| Jump Box |      No             | 10.0.0.1 10.0.0.2    |
+| Web1/2   |      No             |10.0.0.4 10.0.0.7     |
+|  ELK     |     Yes             | Any                  |
 
 ### Elk Configuration
 
