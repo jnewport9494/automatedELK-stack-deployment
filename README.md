@@ -1,10 +1,10 @@
 # automatedELK-stack-deployment
 Here is an Automated ELK Stack Deployment with Metricbeat and Filebeat.
 ## Automated ELK Stack Deployment
-https://github.com/jnewport9494/automatedELK-stack-deployment/blob/main/images/Azure%20Network%20Diagram.png
-The files in this repository were used to configure the network depicted below.
 
-https://github.com/jnewport9494/automatedELK-stack-deployment/blob/main/images/Network%20Diagram.png
+The files in this repository were used to configure the network depicted below.
+https://github.com/jnewport9494/automatedELK-stack-deployment/blob/main/images/Azure%20Network%20Diagram.png
+
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Install Elk file may be used to install only certain pieces of it, such as Filebeat.
 
