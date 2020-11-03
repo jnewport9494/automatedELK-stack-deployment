@@ -25,7 +25,7 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the Damn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly accesible, in addition to restricting  to the network.
--Load balancers evenly distribute the network traffic/load either publicly or on a private network; making these extremely adventageous because they ensure not one specific virtual machine is getting all of the network traffic at once. 
+- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system services.
 Filebeat watches the system logs where the system is told to be monitored. 
@@ -64,7 +64,7 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 - _TODO: What is the main advantage of automating configuration with Ansible?_
 
 The playbook implements the following tasks:
-- Installs docker on the Red-Admin network group machines (Web 1, Web 2)
+Installs docker on the Red-Admin network group machines (Web 1, Web 2)
 - Installs Python on Web 1 and Web 2
 - Adds more RAM onto the two VMs
 - Provisions a docker container for the two VMs
