@@ -48,7 +48,7 @@ Only the ELK machine can accept connections from the Internet. Access to this ma
 - Albeit the ELK server is publicy acessible, the current whitelisted IP is the Jump-Boxes' which is: 52.188.124.100, using my client machine's public/private keychain using ssh-keygen
 
 Machines within the network can only be accessed by the client machine.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+- Even though it is a publicly accessible machine, the whitelisted client IP is the ELK server's own, which is: 40.78.13.49
 
 A summary of the access policies in place can be found in the table below.
 
