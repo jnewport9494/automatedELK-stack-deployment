@@ -86,6 +86,7 @@ TO DO THIS MAKE SURE YOU HAVE RAN ansible-playbook install-elk.yml OR THESE BEAT
 We have installed the following Beats on these machines:
 - Filebeat: 
 -Run: ansible-playbook filebeat-playbook.yml 
+
 -Install: https://github.com/jnewport9494/automatedELK-stack-deployment/blob/main/Playbooks/Filebeat-Playbook.yml
 
 -Config: https://github.com/jnewport9494/automatedELK-stack-deployment/blob/main/Configuration%20Files/filebeat-config.yml
