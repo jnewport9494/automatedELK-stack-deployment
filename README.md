@@ -120,4 +120,5 @@ SSH into the control node and follow the steps below:
 - http://<publicip>:5601/app/kibana
 
 EXTRAS:
+
 Ansible Config: https://github.com/jnewport9494/automatedELK-stack-deployment/blob/main/Configuration%20Files/Ansible-Config.yml
