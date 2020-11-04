@@ -111,3 +111,5 @@ _TODO: Answer the following questions to fill in the blanks:_
 - To specify any monitoring on a given machine, go into your configuration file (for either Metric or Filebeat) and enter in your machine's private IP address. 
 - http://<publicip>:5601/app/kibana
 
+EXTRAS:
+Ansible Config: https://github.com/jnewport9494/automatedELK-stack-deployment/blob/main/Configuration%20Files/Ansible-Config.yml
