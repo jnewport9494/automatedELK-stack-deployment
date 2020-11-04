@@ -106,7 +106,7 @@ SSH into the control node and follow the steps below:
 - Update the file to include your PRIVATE IP addresses
 - Run the playbook, and navigate to http:<yourip>:5601/app/kibana to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
+
 - filebeat-playbook.yml & metricbeat-playbook.yml
 - To specify any monitoring on a given machine, go into your configuration file (for either Metric or Filebeat) and enter in your machine's private IP address. 
 - http://<publicip>:5601/app/kibana
