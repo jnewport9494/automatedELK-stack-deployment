@@ -25,7 +25,7 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the Damn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly accesible, in addition to restricting  to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
+- Load balancers are meant to ensure that no one part of a network/server/virtual machine takes on all of the network traffic/load at once; in fact, these are meant to evenly distribute the network traffic across all aspects of a given network. This make a jumpbox advantageous because it adds extra layers of security for threat actors to hack into any given virtual network. 
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system services.
 Filebeat watches the system logs where the system is told to be monitored. 
@@ -60,8 +60,7 @@ A summary of the access policies in place can be found in the table below.
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because it allows the creation, monitoring, and upkeep of any given virtual machine/network easier. 
 
 The playbook implements the following tasks:
 Installs docker on the Red-Admin network group machines (Web 1, Web 2)
@@ -78,27 +77,37 @@ https://github.com/jnewport9494/automatedELK-stack-deployment/blob/main/images/D
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
+- Web1: 10.0.0.6
+- Web2: 10.0.0.7 
+
+BEFORE DOING ANYTHING MAKE SURE YOU START AND ATTACH YOUR DOCKER CONTAINER WITH: sudo docker container start <docker name> and sudo docker container attach <docker name>
+TO DO THIS MAKE SURE YOU HAVE RAN ansible-playbook install-elk.yml OR THESE BEATS WILL NOT FIND ANYTHING TO MONITOR!
 
 We have installed the following Beats on these machines:
-- Filebeat
+- Filebeat: 
+-Run: ansible-playbook filebeat-playbook.yml 
+-Install: https://github.com/jnewport9494/automatedELK-stack-deployment/blob/main/Playbooks/Filebeat-Playbook.yml
+-Config: https://github.com/jnewport9494/automatedELK-stack-deployment/blob/main/Configuration%20Files/filebeat-config.yml
+-Screenshot: https://github.com/jnewport9494/automatedELK-stack-deployment/blob/main/images/Filebeat%20Installation.png
 
-Metricbeat
+Metricbeat: 
+-Run: ansible-playbook metricbeat-playbook.yml
+-Install: https://github.com/jnewport9494/automatedELK-stack-deployment/blob/main/Playbooks/Metricbeat-Playbook.yml
+-Config: https://github.com/jnewport9494/automatedELK-stack-deployment/blob/main/Configuration%20Files/metricbeat-config.yml
+-Screenshot: https://github.com/jnewport9494/automatedELK-stack-deployment/blob/main/images/Install%20Metricbeat.png
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
-
+Filebeat is used to mitigate and end any threats that have been found on the machine(s) it is set to monitor; Metricbeat is used to find those threat actors on the machine(s). 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
-- Update the _____ file to include...
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
+- Copy the configuration file to /etc/ansible/files directory
+- Update the file to include your PRIVATE IP addresses
+- Run the playbook, and navigate to http:<yourip>:5601/app/kibana to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
+- filebeat-playbook.yml & metricbeat-playbook.yml
+- To specify any monitoring on a given machine, go into your configuration file (for either Metric or Filebeat) and enter in your machine's private IP address. 
+- http://<publicip>:5601/app/kibana
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
