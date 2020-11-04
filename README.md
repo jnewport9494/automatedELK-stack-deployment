@@ -87,13 +87,19 @@ We have installed the following Beats on these machines:
 - Filebeat: 
 -Run: ansible-playbook filebeat-playbook.yml 
 -Install: https://github.com/jnewport9494/automatedELK-stack-deployment/blob/main/Playbooks/Filebeat-Playbook.yml
+
 -Config: https://github.com/jnewport9494/automatedELK-stack-deployment/blob/main/Configuration%20Files/filebeat-config.yml
+
 -Screenshot: https://github.com/jnewport9494/automatedELK-stack-deployment/blob/main/images/Filebeat%20Installation.png
 
 Metricbeat: 
+
 -Run: ansible-playbook metricbeat-playbook.yml
+
 -Install: https://github.com/jnewport9494/automatedELK-stack-deployment/blob/main/Playbooks/Metricbeat-Playbook.yml
+
 -Config: https://github.com/jnewport9494/automatedELK-stack-deployment/blob/main/Configuration%20Files/metricbeat-config.yml
+
 -Screenshot: https://github.com/jnewport9494/automatedELK-stack-deployment/blob/main/images/Install%20Metricbeat.png
 
 These Beats allow us to collect the following information from each machine:
